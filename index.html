@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberComb — Seguretat Empresarial</title>
+    <meta name="description" content="CyberComb - Empresa de ciberseguretat especialitzada en blue team, honeypots i detecció d'intrusos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=M+PLUS+1:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo-sm.png">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="img/logo-sm.png" alt="CyberComb Logo" class="nav-logo-img">
+                <span class="nav-logo-text">CyberComb</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" data-ca="Qui som" data-es="Quiénes somos">Qui som</a></li>
+                <li><a href="#services" data-ca="Serveis" data-es="Servicios">Serveis</a></li>
+                <li><a href="#tech" data-ca="Tecnologia" data-es="Tecnología">Tecnologia</a></li>
+                <li><a href="#pricing" data-ca="Preus" data-es="Precios">Preus</a></li>
+                <li><a href="#contact" data-ca="Contacte" data-es="Contacto">Contacte</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" title="Canviar tema">
+                    <span class="theme-icon" id="themeIcon">☀</span>
+                </button>
+                <button class="lang-toggle" id="langToggle" title="Canviar idioma">
+                    <span class="lang-active" id="langLabel">CA</span>
+                    <span class="lang-separator">|</span>
+                    <span class="lang-inactive" id="langLabelAlt">ES</span>
+                </button>
+                <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+        <div class="hex-grid-bg"></div>
+        <div class="hero-content">
+            <img src="img/logo-sm.png" alt="CyberComb" class="hero-logo">
+            <h1 class="hero-title">CyberComb</h1>
+            <p class="hero-subtitle" data-ca="Seguretat empresarial intel·ligent" data-es="Seguridad empresarial inteligente">Seguretat empresarial intel·ligent</p>
+            <p class="hero-desc" data-ca="Protegim la teva empresa amb tecnologia d'engany avançada. Atraiem als atacants, analitzem els seus moviments i blindem la teva xarxa." data-es="Protegemos tu empresa con tecnología de engaño avanzada. Atraemos a los atacantes, analizamos sus movimientos y blindamos tu red.">Protegim la teva empresa amb tecnologia d'engany avançada. Atraiem als atacants, analitzem els seus moviments i blindem la teva xarxa.</p>
+            <a href="#services" class="btn-primary" data-ca="Descobreix els nostres serveis" data-es="Descubre nuestros servicios">Descobreix els nostres serveis</a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-hex">⬡</div>
+        </div>
+    </section>
+
+    <!-- ==================== STATS / AWARENESS ==================== -->
+    <section class="section section-stats" id="stats">
+        <div class="container">
+            <h2 class="section-title" data-ca="Per què la ciberseguretat importa" data-es="Por qué la ciberseguridad importa">Per què la ciberseguretat importa</h2>
+            <p class="section-subtitle" data-ca="Les xifres parlen per si soles" data-es="Las cifras hablan por sí solas">Les xifres parlen per si soles</p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="45000">0</div>
+                    <div class="stat-label" data-ca="ciberatacs diaris a Espanya" data-es="ciberataques diarios en España">ciberatacs diaris a Espanya</div>
+                    <div class="stat-source">Datos101, 2025</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="122223">0</div>
+                    <div class="stat-label" data-ca="incidents gestionats per INCIBE en 2025" data-es="incidentes gestionados por INCIBE en 2025">incidents gestionats per INCIBE en 2025</div>
+                    <div class="stat-source">INCIBE, 2025</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number stat-prefix" data-count="60" data-prefix="" data-suffix="%">0</div>
+                    <div class="stat-label" data-ca="de les PYMES que pateixen un atac greu tanquen en 6 mesos" data-es="de las PYMES que sufren un ataque grave cierran en 6 meses">de les PYMES que pateixen un atac greu tanquen en 6 mesos</div>
+                    <div class="stat-source">SpainClouds / NTT DATA, 2025</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number stat-prefix" data-count="5.5" data-prefix="" data-suffix="M€">0</div>
+                    <div class="stat-label" data-ca="cost mitjà per ciberatac a grans empreses" data-es="coste medio por ciberataque a grandes empresas">cost mitjà per ciberatac a grans empreses</div>
+                    <div class="stat-source">Datos101, 2025</div>
+                </div>
+            </div>
+            <div class="stats-cta">
+                <p data-ca="El 70% dels ciberatacs es dirigeixen a PYMES. El ransomware ha augmentat un 120% a Espanya en 2025. La pregunta ja no és si et passarà, sinó quan." data-es="El 70% de los ciberataques se dirigen a PYMES. El ransomware ha aumentado un 120% en España en 2025. La pregunta ya no es si te pasará, sino cuándo.">El 70% dels ciberatacs es dirigeixen a PYMES. El ransomware ha augmentat un 120% a Espanya en 2025. La pregunta ja no és si et passarà, sinó quan.</p>
+                <a href="#services" class="btn-primary" data-ca="Protegeix la teva empresa" data-es="Protege tu empresa">Protegeix la teva empresa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title" data-ca="Qui som" data-es="Quiénes somos">Qui som</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-ca="CyberComb és una empresa de seguretat empresarial especialitzada en serveis de blue team. El nostre servei principal consisteix en la implementació de xarxes de dispositius fantasma — el que coneixem com Honeycomb." data-es="CyberComb es una empresa de seguridad empresarial especializada en servicios de blue team. Nuestro servicio principal consiste en la implementación de redes de dispositivos fantasma — lo que conocemos como Honeycomb.">CyberComb és una empresa de seguretat empresarial especialitzada en serveis de blue team. El nostre servei principal consisteix en la implementació de xarxes de dispositius fantasma — el que coneixem com Honeycomb.</p>
+                    <p data-ca="Aquestes xarxes simulen l'estructura real de l'empresa client amb màquines obertes aparentment vulnerables. Quan un atacant cau a la trampa, tota la seva informació es recopilada, analitzada i representada visualment en temps real." data-es="Estas redes simulan la estructura real de la empresa cliente con máquinas abiertas aparentemente vulnerables. Cuando un atacante cae en la trampa, toda su información es recopilada, analizada y representada visualmente en tiempo real.">Aquestes xarxes simulen l'estructura real de l'empresa client amb màquines obertes aparentment vulnerables. Quan un atacant cau a la trampa, tota la seva informació es recopilada, analitzada i representada visualment en temps real.</p>
+                    <div class="about-name-origin">
+                        <div class="hex-badge">⬡</div>
+                        <div>
+                            <strong>Cyberseguretat + HoneyComb = CyberComb</strong>
+                            <span data-ca="El nom és autoexplicatiu: seguretat informàtica i xarxes honeypot." data-es="El nombre es autoexplicativo: seguridad informática y redes honeypot.">El nom és autoexplicatiu: seguretat informàtica i xarxes honeypot.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h3 data-ca="Monitoratge de xarxa" data-es="Monitorización de red">Monitoratge de xarxa</h3>
+                        <p data-ca="Vigilància constant del tràfic i rendiment dels dispositius." data-es="Vigilancia constante del tráfico y rendimiento de los dispositivos.">Vigilància constant del tràfic i rendiment dels dispositius.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 data-ca="Anàlisi de logs" data-es="Análisis de logs">Anàlisi de logs</h3>
+                        <p data-ca="Recopilació i anàlisi de dades dels events de seguretat." data-es="Recopilación y análisis de datos de los eventos de seguridad.">Recopilació i anàlisi de dades dels events de seguretat.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3 data-ca="Visualització en temps real" data-es="Visualización en tiempo real">Visualització en temps real</h3>
+                        <p data-ca="Dashboards interactives amb les dades obtingudes." data-es="Dashboards interactivos con los datos obtenidos.">Dashboards interactives amb les dades obtingudes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🪤</div>
+                        <h3 data-ca="Tecnologia d'engany" data-es="Tecnología de engaño">Tecnologia d'engany</h3>
+                        <p data-ca="Fem creure a l'atacant que ha accedit al lloc correcte." data-es="Hacemos creer al atacante que ha accedido al lugar correcto.">Fem creure a l'atacant que ha accedit al lloc correcte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="section section-dark" id="services">
+        <div class="container">
+            <h2 class="section-title" data-ca="Serveis" data-es="Servicios">Serveis</h2>
+            <p class="section-subtitle" data-ca="El que ens diferencia de la competència" data-es="Lo que nos diferencia de la competencia">El que ens diferencia de la competència</p>
+            <div class="services-timeline">
+                <div class="service-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 data-ca="Anàlisi de la infraestructura" data-es="Análisis de la infraestructura">Anàlisi de la infraestructura</h3>
+                        <p data-ca="Realitzem un estudi complet de la xarxa del client per recomanar el model de seguretat més adient. Això inclou tant aspectes informàtics com físics." data-es="Realizamos un estudio completo de la red del cliente para recomendar el modelo de seguridad más adecuado. Esto incluye tanto aspectos informáticos como físicos.">Realitzem un estudi complet de la xarxa del client per recomanar el model de seguretat més adient. Això inclou tant aspectes informàtics com físics.</p>
+                    </div>
+                </div>
+                <div class="service-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 data-ca="Implementació del model de seguretat" data-es="Implementación del modelo de seguridad">Implementació del model de seguretat</h3>
+                        <p data-ca="Un cop analitzada la xarxa, s'escull i s'implementa el model o capes de seguretat escollides pel client, amb les nostres recomanacions." data-es="Una vez analizada la red, se elige e implementa el modelo o capas de seguridad elegidas por el cliente, con nuestras recomendaciones.">Un cop analitzada la xarxa, s'escull i s'implementa el model o capes de seguretat escollides pel client, amb les nostres recomanacions.</p>
+                    </div>
+                </div>
+                <div class="service-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 data-ca="Proves de seguretat" data-es="Pruebas de seguridad">Proves de seguretat</h3>
+                        <p data-ca="Verifiquem el correcte funcionament de tots els sistemes implementats amb proves controlades." data-es="Verificamos el correcto funcionamiento de todos los sistemas implementados con pruebas controladas.">Verifiquem el correcte funcionament de tots els sistemes implementats amb proves controlades.</p>
+                    </div>
+                </div>
+                <div class="service-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 data-ca="Manteniment continu" data-es="Mantenimiento continuo">Manteniment continu</h3>
+                        <p data-ca="Servei opcional per subscripció que inclou supervisió, actualitzacions i atenció al client personalitzada. Estalvia a l'empresa la nòmina d'un tècnic dedicat." data-es="Servicio opcional por suscripción que incluye supervisión, actualizaciones y atención al cliente personalizada. Ahorra a la empresa la nómina de un técnico dedicado.">Servei opcional per subscripció que inclou supervisió, actualitzacions i atenció al client personalitzada. Estalvia a l'empresa la nòmina d'un tècnic dedicat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TECH STACK ==================== -->
+    <section class="section" id="tech">
+        <div class="container">
+            <h2 class="section-title" data-ca="Tecnologia" data-es="Tecnología">Tecnologia</h2>
+            <p class="section-subtitle" data-ca="Les eines que fan possible CyberComb" data-es="Las herramientas que hacen posible CyberComb">Les eines que fan possible CyberComb</p>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">🍯</div>
+                    <h3>Cowrie</h3>
+                    <p data-ca="Honeypot SSH que simula un servidor vulnerable. Registra tots els intents d'accés, contrasenyes provades i comandes executades pels atacants." data-es="Honeypot SSH que simula un servidor vulnerable. Registra todos los intentos de acceso, contraseñas probadas y comandos ejecutados por los atacantes.">Honeypot SSH que simula un servidor vulnerable. Registra tots els intents d'accés, contrasenyes provades i comandes executades pels atacants.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🔎</div>
+                    <h3>Elasticsearch</h3>
+                    <p data-ca="Motor de cerca i anàlisi que emmagatzema i indexa tots els logs generats pels honeypots. Permet cerques ràpides sobre grans volums de dades." data-es="Motor de búsqueda y análisis que almacena e indexa todos los logs generados por los honeypots. Permite búsquedas rápidas sobre grandes volúmenes de datos.">Motor de cerca i anàlisi que emmagatzema i indexa tots els logs generats pels honeypots. Permet cerques ràpides sobre grans volums de dades.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">📊</div>
+                    <h3>Grafana</h3>
+                    <p data-ca="Plataforma de visualització que transforma les dades en dashboards interactives: mapes d'atacs, gràfics temporals, comptadors en temps real." data-es="Plataforma de visualización que transforma los datos en dashboards interactivos: mapas de ataques, gráficos temporales, contadores en tiempo real.">Plataforma de visualització que transforma les dades en dashboards interactives: mapes d'atacs, gràfics temporals, comptadors en temps real.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">📡</div>
+                    <h3>Filebeat</h3>
+                    <p data-ca="Agent lleuger que recull els logs del honeypot i els envia a Elasticsearch en temps real, sense consumir gairebé recursos." data-es="Agente ligero que recoge los logs del honeypot y los envía a Elasticsearch en tiempo real, sin consumir apenas recursos.">Agent lleuger que recull els logs del honeypot i els envia a Elasticsearch en temps real, sense consumir gairebé recursos.</p>
+                </div>
+            </div>
+            <div class="tech-pipeline">
+                <div class="pipeline-step">Cowrie</div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-step">Filebeat</div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-step">Elasticsearch</div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-step">Grafana</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING ==================== -->
+    <section class="section section-dark" id="pricing">
+        <div class="container">
+            <h2 class="section-title" data-ca="Preus" data-es="Precios">Preus</h2>
+            <p class="section-subtitle" data-ca="Solucions adaptades a cada empresa" data-es="Soluciones adaptadas a cada empresa">Solucions adaptades a cada empresa</p>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-tier" data-ca="Bàsic" data-es="Básico">Bàsic</div>
+                    <h3>Standalone</h3>
+                    <div class="price-amount">200€</div>
+                    <div class="price-rate">+ 25€/h</div>
+                    <ul class="price-features">
+                        <li data-ca="Honeypot únic" data-es="Honeypot único">Honeypot únic</li>
+                        <li data-ca="Ideal per proves de concepte" data-es="Ideal para pruebas de concepto">Ideal per proves de concepte</li>
+                        <li data-ca="Dashboard bàsica" data-es="Dashboard básico">Dashboard bàsica</li>
+                        <li data-ca="Sense manteniment necessari" data-es="Sin mantenimiento necesario">Sense manteniment necessari</li>
+                    </ul>
+                </div>
+                <div class="price-card price-featured">
+                    <div class="price-tier" data-ca="Recomanat" data-es="Recomendado">Recomanat</div>
+                    <h3>IDH Node</h3>
+                    <div class="price-amount">500€</div>
+                    <div class="price-rate">+ 30€/h</div>
+                    <ul class="price-features">
+                        <li data-ca="Detecció d'intrusos completa" data-es="Detección de intrusos completa">Detecció d'intrusos completa</li>
+                        <li data-ca="Registre total d'activitat" data-es="Registro total de actividad">Registre total d'activitat</li>
+                        <li data-ca="Dashboards en temps real" data-es="Dashboards en tiempo real">Dashboards en temps real</li>
+                        <li data-ca="Manteniment: 50€/h" data-es="Mantenimiento: 50€/h">Manteniment: 50€/h</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <div class="price-tier">Enterprise</div>
+                    <h3>Heavy Node</h3>
+                    <div class="price-amount">1.500€</div>
+                    <div class="price-rate">+ 45€/h</div>
+                    <ul class="price-features">
+                        <li data-ca="Múltiples honeypots" data-es="Múltiples honeypots">Múltiples honeypots</li>
+                        <li data-ca="Alt volum de tràfic" data-es="Alto volumen de tráfico">Alt volum de tràfic</li>
+                        <li data-ca="Informes detallats" data-es="Informes detallados">Informes detallats</li>
+                        <li data-ca="Manteniment: 150€/h" data-es="Mantenimiento: 150€/h">Manteniment: 150€/h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-ca="Contacte" data-es="Contacto">Contacte</h2>
+            <p class="section-subtitle" data-ca="Parlem sobre la seguretat de la teva empresa" data-es="Hablemos sobre la seguridad de tu empresa">Parlem sobre la seguretat de la teva empresa</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">✉</div>
+                    <h3>Email</h3>
+                    <a href="mailto:contacte@cybercomb.cat">contacte@cybercomb.cat</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">☎</div>
+                    <h3 data-ca="Telèfon" data-es="Teléfono">Telèfon</h3>
+                    <a href="tel:+34600000000">+34 600 00 00 00</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🌐</div>
+                    <h3>Web</h3>
+                    <a href="https://www.cybercomb.cat">www.cybercomb.cat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="nav-logo-text">CyberComb</span>
+                <p>Grup 7 — ASIX</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a>
+            </div>
+            <p class="footer-copy">© 2026 CyberComb. <span data-ca="Tots els drets reservats." data-es="Todos los derechos reservados.">Tots els drets reservats.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
