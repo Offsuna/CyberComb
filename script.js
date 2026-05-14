@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (localStorage.getItem('cybercomb-theme') === 'light') {
         document.body.classList.add('light-mode');
-        themeIcon.textContent = '\u263E';
+        themeIcon.textContent = '🌙';
         isDark = false;
     }
 
     themeToggle.addEventListener('click', () => {
         isDark = !isDark;
         document.body.classList.toggle('light-mode');
-        themeIcon.textContent = isDark ? '\u2600' : '\u263E';
+        themeIcon.textContent = isDark ? '🌞' : '🌙';
         localStorage.setItem('cybercomb-theme', isDark ? 'dark' : 'light');
     });
 
