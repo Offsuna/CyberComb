@@ -130,6 +130,35 @@ body.light-mode .btn-primary {
     box-shadow: 0 2px 12px rgba(253, 242, 59, 0.3);
 }
 
+/* ==================== LIGHT MODE — TEXT YELLOW FIXES ==================== */
+/* Micro 5 (pixel font) no és compatible amb text-stroke → canviem a negre */
+body.light-mode .hero-title,
+body.light-mode .section-title,
+body.light-mode .stat-number,
+body.light-mode .nav-logo-text,
+body.light-mode .tech-card h3,
+body.light-mode .price-card h3,
+body.light-mode .pipeline-step {
+    color: #000000;
+}
+
+/* M PLUS 1 (body font) → borde negre per mantenir el groc visible */
+body.light-mode a,
+body.light-mode .lang-active,
+body.light-mode .price-tier,
+body.light-mode .price-amount,
+body.light-mode .contact-card a,
+body.light-mode .about-name-origin strong,
+body.light-mode .step-number,
+body.light-mode .pipeline-arrow,
+body.light-mode .price-features li::before,
+body.light-mode .scroll-hex,
+body.light-mode .hex-badge,
+body.light-mode .footer-links a:hover {
+    -webkit-text-stroke: 0.4px #000000;
+    paint-order: stroke fill;
+}
+
 /* ==================== STATS SECTION ==================== */
 .section-stats {
     background: var(--dark-surface);
